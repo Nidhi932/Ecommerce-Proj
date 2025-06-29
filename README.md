@@ -1,12 +1,76 @@
-# React + Vite
+# 🛍️ E-commerce Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive and performant E-commerce application built using **React.js**, **Vite**, and **Appwrite**. It features product listings, a shopping cart, and a checkout experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛒 Product listing from JSON data
+- ➕ Add to Cart / Remove from Cart
+- 🧮 Cart quantity and total price calculation
+- ✅ Checkout page
+- 🔐 Authentication context structure ready (AuthContext)
+- 🧱 Component-based architecture
+- 🌐 State management using React Context API
+- ⚡️ Fast build & development with Vite
 
-## Expanding the ESLint configuration
+## 📁 Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+Ecommerce-Proj-main/
+│
+├── public/                # Static assets
+│
+├── src/
+│   ├── api/               # Appwrite integration and product data
+│   ├── assets/            # Images and icons
+│   ├── components/        # Reusable UI components
+│   ├── context/           # Auth & Cart context providers
+│   ├── pages/             # Main pages (Home, Cart, Checkout)
+│   ├── App.jsx            # Root component
+│   ├── main.jsx           # React DOM entry point
+│   └── index.css          # Global styles
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+## 🧰 Tech Stack
+
+- **Frontend**: React.js (with Hooks), Vite
+- **State Management**: React Context API
+- **API & Auth**: Appwrite (placeholder or planned integration)
+- **Styling**: CSS
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/ecommerce-proj.git
+cd ecommerce-proj
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+## 🧪 Testing
+
+Testing is not set up in this boilerplate version. You can integrate tools like Jest or React Testing Library.
+
+## 🛠️ Future Improvements
+
+- Add user authentication via Appwrite
+- Connect to real-time database
+- Add product filtering & sorting
+- Order history & profile pages
+- Payment gateway integration
+
+## 📄 License
+
+This project is licensed under the MIT License.

@@ -26,7 +26,7 @@ const Home = () => {
       filtered = [...filtered].sort((a, b) => b.price - a.price);
     }
     setProducts(filtered);
-    setCurrentPage(1); // Reset to first page on filter/sort change
+    setCurrentPage(1);
   }, [category, sort]);
 
   // Pagination logic
